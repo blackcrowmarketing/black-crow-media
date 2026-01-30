@@ -1,0 +1,38 @@
+name: Deploy to VPS
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install Dependencies
+        run: pnpm install
+
+      - name: Build Project
+        run: pnpm run build
+
+      - name: Deploy to Nginx
+        run: |
+          # Ensure target directory exists
+          sudo mkdir -p /var/www/black-crow-media
+          
+          # Copy build files
+          sudo cp -r dist/* /var/www/black-crow-media/
+          
+          # Set permissions
+          sudo chown -R www-data:www-data /var/www/black-crow-media
+          sudo chmod -R 755 /var/www/black-crow-media
+
+      - name: Restart Nginx (Optional)
+        run: sudo systemctl reload nginx
