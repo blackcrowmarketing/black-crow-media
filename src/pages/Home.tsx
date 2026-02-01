@@ -11,10 +11,10 @@ export default function Home() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-yellow-900/20 via-black to-black" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-yellow-900/30 border border-yellow-500/30 text-yellow-400 mb-8">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#F4D03F]/10 border border-[#F4D03F]/30 text-[#F4D03F] mb-8">
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-yellow-500"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#F4D03F] opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#F4D03F]"></span>
               </span>
               The Publishing Division of Black Crow Group
             </div>
@@ -50,9 +50,9 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {/* Agency OS */}
             <Link to="/agency-os">
-              <Card className="bg-zinc-900 border-zinc-800 hover:border-yellow-500/50 transition-colors group cursor-pointer h-full">
+              <Card className="bg-zinc-900 border-zinc-800 hover:border-[#F4D03F]/50 transition-colors group cursor-pointer h-full">
                 <CardContent className="p-6 space-y-4">
-                  <div className="h-12 w-12 rounded-lg bg-yellow-900/30 flex items-center justify-center text-yellow-400 group-hover:scale-110 transition-transform">
+                  <div className="h-12 w-12 rounded-lg bg-[#F4D03F]/10 flex items-center justify-center text-[#F4D03F] group-hover:scale-110 transition-transform">
                     <BookOpen className="h-6 w-6" />
                   </div>
                   <h3 className="text-xl font-bold text-white">Agency OS</h3>
@@ -60,7 +60,7 @@ export default function Home() {
                     The complete system architecture for running a Zero-Touch digital agency.
                   </p>
                   <div className="pt-4">
-                    <span className="text-yellow-400 font-semibold group-hover:underline">
+                    <span className="text-[#F4D03F] font-semibold group-hover:underline">
                       Learn More →
                     </span>
                   </div>
