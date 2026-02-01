@@ -29,7 +29,7 @@ export default function Home() {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link to="/agency-os" className="w-full sm:w-auto">
-                <Button size="lg" className="bg-[#FDB913] hover:bg-[#FDB913]/90 text-black font-bold text-lg px-8 py-6 h-auto w-full shadow-[0_0_20px_rgba(253,185,19,0.5)] transition-all hover:scale-105">
+                <Button size="lg" className="bg-[#F4D03F] hover:bg-[#F4D03F]/90 text-black font-bold text-lg px-8 py-6 h-auto w-full shadow-[0_0_20px_rgba(244,208,63,0.5)] transition-all hover:scale-105">
                   Explore Agency OS
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
